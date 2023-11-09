@@ -20,8 +20,3 @@ struct ContactList: View {
     }
 }
 
-struct ContactList_Previews: PreviewProvider {
-    static var previews: some View {
-        ContactList(contacts: Person.getContactList())
-    }
-}

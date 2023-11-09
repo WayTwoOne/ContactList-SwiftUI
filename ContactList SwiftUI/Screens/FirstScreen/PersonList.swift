@@ -16,7 +16,7 @@ struct PersonList: View {
                 Spacer()
                 Image(systemName: "person.fill")
                     .resizable()
-                    .frame(width: 120, height: 120, alignment: .leadingLastTextBaseline)
+                    .frame(width: 120, height: 120)
                 Spacer()
             }
             
@@ -25,11 +25,5 @@ struct PersonList: View {
         })
         .navigationTitle(Text(person.fullName))
         
-    }
-}
-
-struct ContactRow_Previews: PreviewProvider {
-    static var previews: some View {
-        PersonList(person: Person.getContactList().first!)
     }
 }
